@@ -13,7 +13,7 @@
     /* display:inline-block; */
     width:50em;
     height:15em;
-    stroke: rgb(0, 0, 0);
+    stroke: #000000;
     position: absolute;
     background-color: var(--first);
     padding: 10px;
@@ -36,24 +36,24 @@
 }
 
 
-#a1{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 1.25s; }
-#a2{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 1.5s; }
-#a3{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 1.75s; }
-#a4{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 2.25s; }
-#a5{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 2.5s; }
-#a6{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 2.75s; }
-#a7{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 3.25s; }
-#a8{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 3.5s; }
-#a9{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 3.75s; }
-#a10{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 4.25s; }
-#a11{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 4.5s; }
-#a12{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 4.75s; }
-#a13{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 5.25s; }
-#a14{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 5.5s; }
-#a15{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 5.75s; }
-#a16{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 6.25s; }
-#a17{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 6.5s; }
-#a18{ stroke-width: 1;    animation: letter-animation 10s linear forwards;    animation-delay: 6.75s; }
+#a1{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 1.25s; }
+#a2{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 1.5s; }
+#a3{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 1.75s; }
+#a4{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 2.25s; }
+#a5{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 2.5s; }
+#a6{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 2.75s; }
+#a7{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 3.25s; }
+#a8{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 3.5s; }
+#a9{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 3.75s; }
+#a10{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 4.25s; }
+#a11{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 4.5s; }
+#a12{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 4.75s; }
+#a13{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 5.25s; }
+#a14{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 5.5s; }
+#a15{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 5.75s; }
+#a16{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 6.25s; }
+#a17{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 6.5s; }
+#a18{ stroke-width: 1;    animation: letter-animation 5s linear forwards;    animation-delay: 6.75s; }
 
 
 

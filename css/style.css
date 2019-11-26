@@ -96,12 +96,12 @@
 }
 
 .TRY3{
-    width:50em;
+    width:45em;
     height:20em;
     position: absolute;
-    background-color: var(--first);
+    background-color: var(--second);
     padding: 10px;
-    left: calc(50% - 25em);
+    left: 51%;
     top: 100%;
     text-align: center;
 }
@@ -120,19 +120,25 @@
 }
 
 .TRY4{
-    width:50em;
+    width:45em;
     height:20em;
     position: absolute;
     background-color: var(--first);
     padding: 10px;
-    left: calc(50% - 25em);
-    top: 150%;
+    left: 1%;
+    top: 100%;
     text-align: center;
 }
 
 .TRY4 h1{
-    color: white;
+    color: transparent;
+    background-image: url('https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif');
+    background-size: cover;
+    position: relative;
     font-family: Poppins;
-    text-transform: uppercase;
+    -moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
     font-size: 5em;
+    margin: 10px 0;
 }

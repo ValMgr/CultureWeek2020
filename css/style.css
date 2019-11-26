@@ -4,7 +4,9 @@
 }
 
 :root{
-    --first: #F3B607; 
+    --first: #F3B607;
+    --second: #F3C3C1;
+    --white: white; 
     --black: black;
 }
 
@@ -97,7 +99,7 @@
     width:50em;
     height:20em;
     position: absolute;
-    background-color: var(--black);
+    background-color: var(--first);
     padding: 10px;
     left: calc(50% - 25em);
     top: 100%;
@@ -106,7 +108,7 @@
 
 .TRY3 h1{
     color: transparent;
-    background-image: url('https://media.giphy.com/media/n3xSURtNE62t2/source.gif');
+    background-image: url('https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif');
     background-size: cover;
     position: relative;
     font-family: Poppins;
@@ -115,4 +117,22 @@
 	text-transform: uppercase;
     font-size: 5em;
     margin: 10px 0;
+}
+
+.TRY4{
+    width:50em;
+    height:20em;
+    position: absolute;
+    background-color: var(--first);
+    padding: 10px;
+    left: calc(50% - 25em);
+    top: 150%;
+    text-align: center;
+}
+
+.TRY4 h1{
+    color: white;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-size: 5em;
 }

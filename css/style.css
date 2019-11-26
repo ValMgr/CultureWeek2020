@@ -92,3 +92,27 @@
     font-size: 5em;
     margin: 10px 0;
 }
+
+.TRY3{
+    width:50em;
+    height:20em;
+    position: absolute;
+    background-color: var(--black);
+    padding: 10px;
+    left: calc(50% - 25em);
+    top: 100%;
+    text-align: center;
+}
+
+.TRY3 h1{
+    color: transparent;
+    background-image: url('https://media.giphy.com/media/n3xSURtNE62t2/source.gif');
+    background-size: cover;
+    position: relative;
+    font-family: Poppins;
+    -moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+    font-size: 5em;
+    margin: 10px 0;
+}

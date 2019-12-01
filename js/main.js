@@ -1,3 +1,5 @@
+/* Semaine de la culture 2020 */
+
 /* Apply color from custom.js to css files */
 document.documentElement.style.setProperty('--first', mainColor);
 document.documentElement.style.setProperty('--second', mainColor2);

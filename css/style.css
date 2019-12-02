@@ -51,7 +51,6 @@
     grid-column: 3 / 5;
     grid-row: 2 / 7;
     text-align: center;
-    transform: translateY(-1vh);
 }
 
 .three{

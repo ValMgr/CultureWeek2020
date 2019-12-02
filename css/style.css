@@ -73,11 +73,12 @@
 
 .menu{
     background-color: var(--first);
-    width: 10vw;
-    top: 100vh;
+    width: 3vw;
+    height: 100vh;
     position: fixed;
     right: 0;
     top: 0;
+    padding: 0.1vw;
 }
 
 .link{
@@ -86,9 +87,61 @@
     color: var(--black);
     text-decoration: none;
     font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.vertical{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: Poppins;
+    position: relative;
+    letter-spacing: 5px;
+    top: 10vh;
+    left: 1vw;
+    
+}
+
+.menu:hover{
+    width: 15vw;
+    padding: 2vw;
+}
+
+.menu a{
+    display: none;
+}
+
+.menu:hover > a{
+    display: block;
+}
+
+.menu:hover > h2{
+    display: none;
+}
+
+
+
+
+
+.link:hover{
+    color: var(--first);
+    text-shadow: var(--black) 1px 1px, var(--black) -1px 1px, var(--black) -1px -1px, var(--black) 1px -1px;
+    text-decoration: line-through;
+    text-decoration-color: var(--black);
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px; /* il dit qu'il connait pas, mais il ment, ça fonctionne très bien */ 
 }
 
 .disabled{
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+.disabled:hover{
+    opacity: 0.5;
+    cursor: not-allowed;
+    color: var(--black);
+    text-shadow: none;
+    text-decoration: none;
 }

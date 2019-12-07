@@ -1,9 +1,8 @@
 /* Semaine de la culture 2020 */
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 
 *{
     margin: 0;
-    overflow-x: hidden;
 }
 
 :root{
@@ -71,14 +70,57 @@
 
 /* MENU */
 
-.menu{
-    background-color: var(--first);
-    width: 3vw;
-    height: 100vh;
-    position: fixed;
+nav {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+nav .headbands {
+    z-index: 1;
+    position: absolute;
     right: 0;
     top: 0;
-    padding: 0.1vw;
+    bottom: 0;
+    background-color: var(--first);
+    width: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+nav .headbands p {
+    text-align: center;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+nav:hover .headbands {
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+
+nav .menu {
+    z-index: 2;
+    background-color: var(--first);
+    width: 300px;
+    height: 100%;
+    transform: translateX(100%);
+    transition-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav:hover .menu {
+    transform: translateX(0);
 }
 
 .link{
@@ -92,37 +134,9 @@
     margin-bottom: 2vh;
 }
 
-.vertical{
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-family: Poppins;
-    position: relative;
-    letter-spacing: 5px;
-    top: 10vh;
-    left: 1vw;
-    
-}
-
-.menu:hover{
-    width: 15vw;
-    padding: 2vw;
-}
-
 .menu a{
-    display: none;
-}
-
-.menu:hover > a{
     display: block;
 }
-
-.menu:hover > h2{
-    display: none;
-}
-
-
-
-
 
 .link:hover{
     color: var(--first);
@@ -144,4 +158,23 @@
     color: var(--black);
     text-shadow: none;
     text-decoration: none;
+}
+
+nav .reseaux {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav .reseaux .r {
+    padding: 6px;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+nav .reseaux svg {
+    height: 25px;
+    width: 25px;
 }

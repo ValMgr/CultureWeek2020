@@ -55,12 +55,13 @@ function switchMenu(el, way){
 }
 
 function Menu(day, el){
-    el = document.getElementsByClassName("one")[0];
     Array.from(el.children).forEach(element => {
         if(element.getAttribute("day") == day) element.style.display = "unset";
         if(element.getAttribute("day") != day)  element.style.display = "none";
     });
 }
 
-Menu(daySelected)
+Menu(daySelected, el1);
+Menu(daySelected, el2);
+Menu(daySelected, el3);
 includeHTML();

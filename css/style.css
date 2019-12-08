@@ -70,6 +70,23 @@
     overflow: hidden;
 }
 
+.slideUp{
+    animation: slideUp .75s forwards ease;
+}
+
+.slideUp2{
+    animation: slideUp2 .75s forwards ease;
+}
+
+
+.slideDown{
+    animation: slideDown .75s forwards ease;
+}
+
+.slideDown2{
+    animation: slideDown2 .75s forwards ease;
+}
+
 @keyframes slideDown {
     0%{ transform: translateY(-150vh)}
     100%{transform: translateY(-15vh) }
@@ -78,6 +95,17 @@
 @keyframes slideUp {
     0%{ transform: translateY(150vh)}
     100%{transform: translateY(0vh) }
+}
+
+
+@keyframes slideUp2{
+    0%{ transform: translateY(-15vh)}
+    100%{transform: translateY(-150vh)}
+}
+
+@keyframes slideDown2{
+    0%{ transform: translateY(0vh)}
+    100%{transform: translateY(150vh)}
 }
 
 
@@ -106,6 +134,9 @@
     width: 15px;
     background-color: var(--black);
     position: absolute;
+    cursor: pointer;
+    transition: .25s ease;
+
 }
 
 .day p{
@@ -114,16 +145,23 @@
     color: var(--black);
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    user-select: none;
+    transition: .25s ease;
 
 }
 
 .daySelected{
     height: 25px;
     width: 25px;
+    transform: translateY(-5px);
+    transition: .25s ease;
 }
 
 .daySelected p{
     margin-left: 35px;
+    margin-top: unset;
+    transition: .25s ease;
+
 }
 
 #Lundi{

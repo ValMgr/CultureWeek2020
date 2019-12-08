@@ -15,13 +15,25 @@
 
 
             <div class="one news">
-                <img class="news-img" src="CUSTOM/img/img2.jpg">
+                <img class="news-img" day="LUNDI" src="CUSTOM/img/img2.jpg">
+                <img class="news-img" day="MARDI" src="CUSTOM/img/img22.png">
+                <img class="news-img" day="MERCREDI" src="CUSTOM/img/img23.png">
+                <img class="news-img" day="JEUDI" src="CUSTOM/img/img24.png">
+                <img class="news-img" day="VENDREDI" src="CUSTOM/img/img25.png">
             </div>
             <div class="two news">
-                <img class="news-img" src="CUSTOM/img/img.png">
+                <img class="news-img" day="LUNDI" src="CUSTOM/img/img.png">
+                <img class="news-img" day="MARDI" src="CUSTOM/img/img.png">
+                <img class="news-img" day="MERCREDI" src="CUSTOM/img/img.png">
+                <img class="news-img" day="JEUDI" src="CUSTOM/img/img.png">
+                <img class="news-img" day="VENDREDI" src="CUSTOM/img/img.png">
             </div>
             <div class="three news">
-                <img class="news-img" src="CUSTOM/img/img3.jpg">
+                <img class="news-img" day="LUNDI" src="CUSTOM/img/img3.jpg">
+                <img class="news-img" day="MARDI" src="CUSTOM/img/img32.png">
+                <img class="news-img" day="MERCREDI" src="CUSTOM/img/img33.png">
+                <img class="news-img" day="JEUDI" src="CUSTOM/img/img34.png">
+                <img class="news-img" day="VENDREDI" src="CUSTOM/img/img35.png">
             </div>
 
 
@@ -30,11 +42,11 @@
 
     <div id="calendar">
         <span id="core"></span>
-        <div id="Lundi" class="day"><p>LUNDI</p></div>
-        <div id="Mardi" class="day"><p>MARDI</p></div>
-        <div id="Mercredi" class="day"><p>MERCREDI</p></div>
-        <div id="Jeudi" class="day"><p>JEUDI</p></div>
-        <div id="Vendredi" class="day"><p>VENDREDI</p></div>
+        <div id="Lundi" class="day daySelected" onclick="DaySelect(0);"><p>LUNDI</p></div>
+        <div id="Mardi" class="day" onclick="DaySelect(1);"><p>MARDI</p></div>
+        <div id="Mercredi" class="day" onclick="DaySelect(2);"><p>MERCREDI</p></div>
+        <div id="Jeudi" class="day" onclick="DaySelect(3);"><p>JEUDI</p></div>
+        <div id="Vendredi" class="day" onclick="DaySelect(4);"><p>VENDREDI</p></div>
     </div>
 
     <nav include="menu.html"></nav>

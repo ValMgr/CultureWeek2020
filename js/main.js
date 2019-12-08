@@ -8,3 +8,6 @@ document.documentElement.style.setProperty('--fourth', secondaryColor2);
 
 document.documentElement.style.setProperty('--black', blackColor);
 document.documentElement.style.setProperty('--white', whiteColor);
+
+
+includeHTML();

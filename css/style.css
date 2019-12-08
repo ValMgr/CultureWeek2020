@@ -31,7 +31,7 @@
 #logo-background{
     grid-column: 3 / 5;
     grid-row: 2 / 5;
-    padding: 3vw;
+    
 }
 
 .content{
@@ -61,7 +61,7 @@
 }
 
 .news-img{
-    width: 70%;
+    width: 85%;
 }
 
 .news{
@@ -72,7 +72,6 @@
 
 nav {
     position: absolute;
-    width: 300px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -86,7 +85,7 @@ nav .headbands {
     top: 0;
     bottom: 0;
     background-color: var(--first);
-    width: 45px;
+    width: 65px;
     display: flex;
     justify-content: center;
 }
@@ -98,8 +97,9 @@ nav .headbands p {
     text-orientation: upright;
     color: var(--black);
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1.3em;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 5px;
 }
 
 nav:hover .headbands {
@@ -110,8 +110,8 @@ nav:hover .headbands {
 nav .menu {
     z-index: 2;
     background-color: var(--first);
-    width: 300px;
     height: 100%;
+    width: 300px;
     transform: translateX(100%);
     transition-duration: 0.4s;
     display: flex;
@@ -124,40 +124,66 @@ nav:hover .menu {
 }
 
 .link{
+    text-align: center;
+    margin-bottom: 2vh;
+    position: relative;
+}
+
+.link a{
     font-family: Poppins;
     font-weight: bold;
     color: var(--black);
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 2vh;
+    position: relative;
 }
 
-.menu a{
-    display: block;
+.link a:before{
+    content: "";
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    height: 3px;
+    bottom: 45%;
+    background: rgb(0, 0, 0);
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+  }
+
+  .link a:hover:before{
+    visibility: visible;
+    transform: scaleX(1);
 }
 
-.link:hover{
+
+.link a:hover{
     color: var(--first);
     text-shadow: var(--black) 1px 1px, var(--black) -1px 1px, var(--black) -1px -1px, var(--black) 1px -1px;
-    text-decoration: line-through;
+    transition: .25s linear;
+    /*text-decoration: line-through;
     text-decoration-color: var(--black);
     text-decoration-style: solid;
     text-decoration-thickness: 3px; /* il dit qu'il connait pas, mais il ment, ça fonctionne très bien */ 
 }
 
-.disabled{
+.disabled a{
     opacity: 0.5;
     cursor: not-allowed;
 }
 
-.disabled:hover{
+.disabled a:hover{
     opacity: 0.5;
     cursor: not-allowed;
     color: var(--black);
     text-shadow: none;
     text-decoration: none;
+}
+
+.disabled a:hover:before{
+    visibility: hidden;
 }
 
 nav .reseaux {

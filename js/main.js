@@ -61,7 +61,5 @@ function Menu(day, el){
     });
 }
 
-Menu(daySelected, el1);
-Menu(daySelected, el2);
-Menu(daySelected, el3);
+
 includeHTML();

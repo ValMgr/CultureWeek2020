@@ -18,6 +18,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
     width: 100vw;
     height: 100vh;
     max-width: 1200px;
@@ -26,7 +27,7 @@
 }
 
 
-/* HOMEPAGE */
+/* HOMEPAGE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #logo-background{
     grid-column: 3 / 5;
@@ -80,11 +81,74 @@
 }
 
 
+#calendar{
+    height: 300px;
+    width: 50px;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: 2%;
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+#core{
+    height: 100%;
+    width: 3px;
+    background-color: var(--black);
+    display: block;
+}
+
+.day{
+    height: 15px;
+    width: 15px;
+    background-color: var(--black);
+    position: absolute;
+}
+
+.day p{
+    margin-left: 25px;
+    margin-top: -5px;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+.daySelected{
+    height: 25px;
+    width: 25px;
+}
+
+.daySelected p{
+    margin-left: 35px;
+}
+
+#Lundi{
+    top: 8%;
+}
+
+#Mardi{
+    top: 28%;
+}
+
+#Mercredi{
+    top: 48%;
+}
+
+#Jeudi{
+    top: 68%;
+}
+
+#Vendredi{
+    top: 88%;
+}
 
 
 
-
-/* MENU */
+/* MENU  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 nav {
     position: absolute;

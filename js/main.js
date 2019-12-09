@@ -47,7 +47,7 @@ function switchMenu(el, way){
         el.classList.remove('slideUp');
         el.classList.add('slideDown2');
             setTimeout(function () {
-                Menu(daySelected, el)
+                //Menu(daySelected, el)       /* L'image du milieu est la même quoi qu'il arrive */
                 el.classList.remove('slideDown2');
                 el.classList.add('slideUp');
             }, 300);
@@ -61,7 +61,5 @@ function Menu(day, el){
     });
 }
 
-Menu(daySelected, el1);
-Menu(daySelected, el2);
-Menu(daySelected, el3);
+
 includeHTML();

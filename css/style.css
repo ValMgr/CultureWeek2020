@@ -1,5 +1,5 @@
 /* Semaine de la culture 2020 */
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');
 
 *{
     margin: 0;
@@ -351,7 +351,67 @@ nav .reseaux svg {
         transition: .25s linear;
     }
 
+    .title-animation {
+        position: relative;
+        grid-row: 3;
+        grid-column: 3 / span 2;
+    }
+
+    .title-animation svg {
+        position: relative;
+        transition-duration: 0.4s;
+        stroke-width:0;
+    }
+
+    .title-animation svg:first-child {
+        transform: translate(0, 100%);
+    }
+    .title-animation svg:first-child text {
+        fill: var(--black);
+    }
+
+    .title-animation svg:nth-child(2) {
+        transform: translate(-4px, 0);
+    }
+    .title-animation svg:nth-child(2) text {
+        fill: rgb(34, 34, 34);
+    }
+
+    .title-animation svg:nth-child(3) {
+        transform: translate(-4px, -100%);
+    }
+    .title-animation svg:nth-child(3) text {
+        fill: rgb(61, 61, 61);
+    }
+
+    .title-animation svg:last-child {
+        transform: translate(-8px, -200%);
+    }
+    .title-animation svg:last-child text {
+        fill: var(--white);
+    }
+
+    .title-animation:hover svg {
+        transform: translate(-12px, 0);
+    }
+
+    .title-animation text {
+        text-anchor: middle;
+        transform: translate(50%, 85px);
+        align-content: center;
+        text-align: center;
+        font-size:100px;stroke:var(--white);font-family:Poppins-Black, Poppins;font-weight:800;letter-spacing:0;
+    }
+
+    .title-animation:hover text {
+        stroke-width:2px;
+        fill: none!important;
+    }
+
     /* MUSIQUE ---------------------------------- */
+
+
+    
 
 
     

@@ -353,10 +353,16 @@ nav .reseaux svg {
         left: 2vh;
         transition: .25s linear;
     }
+
+    .light-logo{
+        fill: var(--white);
+        stroke: var(--white);
+    }
     
     #HomeLogo:hover{
-        fill: var(--black);
-        stroke: var(--black);
+        fill: var(--first);
+        stroke: var(--first);
+    
         transition: .25s linear;
     }
 
@@ -377,6 +383,7 @@ nav .reseaux svg {
     }
     .title-animation svg:first-child text {
         fill: var(--black);
+        transition: .25s ease;
     }
 
     .title-animation svg:nth-child(2) {

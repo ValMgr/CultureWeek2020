@@ -1,12 +1,21 @@
 /* Semaine de la culture 2020 */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');
 
+@font-face {
+    font-family: 'SFPro';
+    src: url('../CUSTOM/font/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../CUSTOM/font/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
     min-width: 100vw;
     min-height: 100vh;
     
@@ -430,6 +439,65 @@ nav .reseaux svg {
     .title-animation:hover text {
         stroke-width:2px;
         fill: none !important;
+    }
+
+    .scrollWrapper{
+        grid-row: 6;
+        grid-column: 3 / 5;
+        display: flex;
+        justify-content: center;
+    }
+
+    .scroll{
+        width: 80px;
+        height: 100px;
+        color: var(--white);
+        font-family: 'SFPro';
+        text-align: center;
+        position: relative;
+        top: 50%;
+        cursor: pointer;
+    }
+
+    .scroll-Link{
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .scroll-Link:before{
+        content: "";
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 2px;
+        bottom: 45%;
+        background: var(--white);
+        visibility: hidden;
+        border-radius: 5px;
+        transform: scaleX(0);
+        transition: .25s linear;
+    }
+
+    .scroll:hover > .scroll-Link:before{
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .scroll:hover > #scroll-span{
+        height: 35px;
+        transition: .25s linear;
+
+    }
+
+    #scroll-span{
+        border-radius: 5px;
+        height: 20px;
+        width: 2px;
+        background-color: white;
+        position: relative;
+        display: block;
+        left: calc(50% - 1px);
+        transition: .25s linear;
     }
 
     /* MUSIQUE ---------------------------------- */

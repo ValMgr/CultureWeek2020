@@ -61,5 +61,13 @@ function Menu(day, el){
     });
 }
 
+function Scroll(){
+    el = document.body
+    window.scrollTo({
+        top: 1081,
+        behavior: 'smooth'
+    });
+}
+
 
 includeHTML();

@@ -211,6 +211,8 @@ nav {
     right: 0;
     bottom: 0;
     overflow: hidden;
+    width: 65px;
+    transition-duration: 0.4s;
 }
 
 nav .headbands {
@@ -223,6 +225,7 @@ nav .headbands {
     width: 65px;
     display: flex;
     justify-content: center;
+    cursor: default;
 }
 
 nav .headbands p {
@@ -255,6 +258,10 @@ nav .menu {
 
 nav:hover .menu {
     transform: translateX(0);
+}
+
+nav:hover {
+    width: 300px;
 }
 
 .link{
@@ -503,6 +510,7 @@ nav .reseaux svg {
     /* MUSIQUE ---------------------------------- */
 
     #musique{
+        
     }
     
 

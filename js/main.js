@@ -61,12 +61,36 @@ function Menu(day, el){
     });
 }
 
-function Scroll(){
+window.addEventListener('wheel', function(event)
+{
+ if (event.deltaY < 0)
+ {
+  console.log('scrolling up');
+  Scroll("up")
+ }
+ else if (event.deltaY > 0)
+ {
+  console.log('scrolling down');
+  Scroll("down")
+ }
+});
+
+function Scroll(dir){
     el = document.body
-    window.scrollTo({
-        top: 1081,
-        behavior: 'smooth'
-    });
+
+    if(dir == "down"){
+        window.scrollTo({
+            top: 1081,
+            behavior: 'smooth'
+        });
+    }
+    else if(dir == "up"){
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    
 }
 
 

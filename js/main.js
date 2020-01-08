@@ -93,5 +93,61 @@ function Scroll(dir){
     
 }
 
+var slides = document.getElementsByClassName("slideShow");
+var dots = document.getElementsByClassName("dot");
+var slideIndex = 0;
+
+function SlideShow(i){
+
+    var posInit = slides[i*2].style.transform;
+    console.log(i*2)
+    posInit = posInit.split('(');
+    posInit = posInit[1];
+    posInit = posInit.split('v');
+    posInit = posInit[0];
+    posInit = Number(posInit)
+
+    for (let j = 0; j < slides.length; j++) {
+        var pos = slides[j].style.transform;
+        pos = pos.split('(');
+        pos = pos[1];
+        pos = pos.split('v');
+        pos = pos[0];
+        pos = Number(pos)
+        slides[j].style.transform = "translateX(" + (pos - posInit) + "vw)";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    dots[slideIndex].className += " active";
+
+}
+
+function plusSlides(n) {
+    slideIndex += n
+    
+
+    if(slideIndex < 0){
+        slideIndex = 6
+        SlideShow(slideIndex);
+    }
+    else if(slideIndex > 6){
+        slideIndex = 0
+        SlideShow(slideIndex);
+    }
+    else{
+        SlideShow(slideIndex);
+    }
+
+    console.log(slideIndex)
+ 
+}
+
+function currentSlide(n) {
+    slideIndex = n
+    SlideShow(slideIndex);
+  }
+
 
 includeHTML();

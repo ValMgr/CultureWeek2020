@@ -93,14 +93,18 @@ function Scroll(dir){
     
 }
 
-var slides = document.getElementsByClassName("slideShow");
-var dots = document.getElementsByClassName("dot");
-var slideIndex = 0;
+var slidesPhoto = document.getElementsByClassName("slideShow");
+var dotsPhoto = document.getElementsByClassName("dot");
+var slideIndexPhoto = 0;
 
-function SlideShow(i){
+// this function work only for photographie.html 
+// because j'ai fait de la merde en me dépéchant
+// Les images sont déplacé 2 par 2 sauf qu'elles sont considéré comme 2 élément différent
+// Il faut les regrouper en 1 seul div
+// Et ça évitera d'avoir un slides[i*2] qui empeche de s'en servir pour les autres
+function SlideShowPhoto(i){
 
     var posInit = slides[i*2].style.transform;
-    console.log(i*2)
     posInit = posInit.split('(');
     posInit = posInit[1];
     posInit = posInit.split('v');
@@ -124,27 +128,83 @@ function SlideShow(i){
 
 }
 
-function plusSlides(n) {
+function plusSlidesPhoto(n) {
     slideIndex += n
     
 
     if(slideIndex < 0){
         slideIndex = 6
-        SlideShow(slideIndex);
+        SlideShowPhoto(slideIndex);
     }
     else if(slideIndex > 6){
+        slideIndex = 0
+        SlideShowPhoto(slideIndex);
+    }
+    else{
+        SlideShowPhoto(slideIndex);
+    }
+ 
+}
+
+function currentSlidePhoto(n) {
+    slideIndex = n
+    SlideShowPhoto(slideIndex);
+  }
+
+
+// Du coup j'en fait un autre pour tout les autres ...
+// C'est vraiment con mais j'ai pas le temps de tout modifier
+var slides = document.getElementsByClassName("slideShow");
+var dots = document.getElementsByClassName("dot");
+var slideIndex = 0;
+
+
+function SlideShow(i){
+
+    var posInit = slides[i].style.transform;
+    posInit = posInit.split('(');
+    posInit = posInit[1];
+    posInit = posInit.split('v');
+    posInit = posInit[0];
+    posInit = Number(posInit)
+
+    for (let j = 0; j < slides.length; j++) {
+        var pos = slides[j].style.transform;
+        pos = pos.split('(');
+        pos = pos[1];
+        pos = pos.split('v');
+        pos = pos[0];
+        pos = Number(pos)
+        slides[j].style.transform = "translateX(" + (pos - posInit) + "vw)";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    dots[slideIndex].className += " active";
+
+    }
+
+    function plusSlides(n) {
+    slideIndex += n
+
+    var maxSlide = slides.length;
+
+    if(slideIndex < 0){
+        slideIndex = maxSlide
+        SlideShow(slideIndex);
+    }
+    else if(slideIndex > maxSlide){
         slideIndex = 0
         SlideShow(slideIndex);
     }
     else{
         SlideShow(slideIndex);
     }
-
-    console.log(slideIndex)
  
 }
 
-function currentSlide(n) {
+function currentSlidePhoto(n) {
     slideIndex = n
     SlideShow(slideIndex);
   }

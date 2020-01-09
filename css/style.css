@@ -588,95 +588,51 @@ nav .reseaux svg {
       
       
 
-    #imgSlide1{
-        grid-row: 2 / 6;
-        grid-column: 1 / 4;
-    }
-
-    #imgSlide2{
-        grid-row: 2 / 6;
-        grid-column: 4 / 7;
-    }
-
-    #imgSlide3{
-        grid-row: 2 / 6;
-        grid-column: 1 / 4;
-    }
-
-    #imgSlide4{
-        grid-row: 2 / 6;
-        grid-column: 4 / 7;
-    }
-
-    #imgSlide5{
-        grid-row: 2 / 6;
-        grid-column: 1 / 4;
-    }
-
-    #imgSlide6{
-        grid-row: 2 / 6;
-        grid-column: 4 / 7;
-    }
-
-    #imgSlide7{
-        grid-row: 2 / 6;
-        grid-column: 1 / 4;
-    }
-
-    #imgSlide8{
-        grid-row: 2 / 6;
-        grid-column: 4 / 7;
-    }
-
-    #imgSlide9{
-        grid-row: 2 / 6;
-        grid-column: 1 / 4;
-    }
-
-    #imgSlide10{
-        grid-row: 2 / 6;
-        grid-column: 4 / 7;
-    }
-
-    
-    #imgSlide11{
-        grid-row: 2 / 6;
-        grid-column: 1 / 4;
-    }
-    
-    #imgSlide12{
-        grid-row: 2 / 6;
-        grid-column: 4 / 7;
-    }
-    
+    #imgSlide1, #imgSlide3,
+    #imgSlide5, #imgSlide7,
+    #imgSlide9, #imgSlide11,
     #imgSlide13{
         grid-row: 2 / 6;
         grid-column: 1 / 4;
     }
-    
+
+    #imgSlide2, #imgSlide4,
+    #imgSlide6, #imgSlide8,
+    #imgSlide10, #imgSlide12,
     #imgSlide14{
         grid-row: 2 / 6;
         grid-column: 4 / 7;
     }
 
 
+    .team img{
+        max-width: 100%;
+        max-height: 100%;
+    }
 
+    .team{
+        grid-row: 2 / 6;
+        grid-column: 2 / 6;
 
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: 1.5s ease;
+        flex-direction: column;
+    }
 
+    .team img{
+        margin: 20px;
+        border: solid 1px black;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .team h3{
+        color: var(--black);
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 2em;
+    }
 
 
 

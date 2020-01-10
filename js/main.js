@@ -99,7 +99,7 @@ var slideIndexPhoto = 0;
 
 // this function work only for photographie.html 
 // because j'ai fait de la merde en me dépéchant
-// Les images sont déplacé 2 par 2 sauf qu'elles sont considéré comme 2 élément différent
+// Les images affiché 2 par 2 sauf qu'elles sont considéré comme 2 élément différent
 // Il faut les regrouper en 1 seul div
 // Et ça évitera d'avoir un slides[i*2] qui empeche de s'en servir pour les autres
 function SlideShowPhoto(i){
@@ -154,6 +154,8 @@ function currentSlidePhoto(n) {
 
 // Du coup j'en fait un autre pour tout les autres ...
 // C'est vraiment con mais j'ai pas le temps de tout modifier
+// j'suis déjà en retard de ouf ¯\_(ツ)_/¯
+// déso pas déso
 var slides = document.getElementsByClassName("slideShow");
 var dots = document.getElementsByClassName("dot");
 var slideIndex = 0;

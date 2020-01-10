@@ -657,8 +657,8 @@ nav .reseaux svg {
 
     .artist img{
         margin: 50px;
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        max-height: 350px;
     }
 
 

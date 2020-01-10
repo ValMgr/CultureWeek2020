@@ -204,7 +204,7 @@ function SlideShow(i){
  
 }
 
-function currentSlidePhoto(n) {
+function currentSlide(n) {
     slideIndex = n
     SlideShow(slideIndex);
   }

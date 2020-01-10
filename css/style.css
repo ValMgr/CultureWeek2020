@@ -634,6 +634,33 @@ nav .reseaux svg {
         font-size: 2em;
     }
 
+    .artist{
+        grid-row: 2 / 6;
+        grid-column: 2 / 6;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: 1.5s ease;
+    }
+
+    .artist p{
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    .artistCol{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .artist img{
+        margin: 50px;
+        width: 300px;
+        height: 300px;
+    }
+
 
 
 

@@ -185,16 +185,18 @@ function SlideShow(i){
 
     }
 
+    var maxSlide = slides.length;
+
+
     function plusSlides(n) {
     slideIndex += n
 
-    var maxSlide = slides.length;
 
     if(slideIndex < 0){
-        slideIndex = maxSlide
+        slideIndex = maxSlide - 1
         SlideShow(slideIndex);
     }
-    else if(slideIndex > maxSlide){
+    else if(slideIndex > maxSlide - 1){
         slideIndex = 0
         SlideShow(slideIndex);
     }

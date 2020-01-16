@@ -1,0 +1,181 @@
+/* RESPONSIVE */
+
+@media screen and (max-width: 1000px) {
+
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    #logo-background{
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+        position: absolute;
+        top: calc(33% / 2);
+        padding: 10%;
+    }
+
+    .news{
+        padding: 5%;
+    }
+
+    nav .headbands {
+        display: none;
+    }
+
+    nav{
+        width: 0%;
+    }
+
+    nav .menu {
+
+        width: 100%;
+        transform: unset;
+    }
+  
+    .burgerbtn{
+        position: fixed;
+        top: 5%;
+        right: 10%;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    
+    .bar1, .bar2, .bar3 {
+    
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+    
+    .bar1{
+        width: 35px;
+      }
+    .bar2{
+          width: 35px;
+      }
+    .bar3{
+          width: 35px;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+        transform: rotate(-45deg) translate(-8px, 6px);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
+      }
+
+    .one{
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        text-align: center;
+        animation: slideDown .75s forwards ease;
+    }
+    
+    .two{
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+        text-align: center;
+        animation: slideUp .75s forwards ease;
+    }
+    
+    .three{
+        grid-column: 3 / 4;
+        grid-row: 2 / 4;
+        text-align: center;
+        animation: slideDown .75s forwards ease;
+    }
+
+    .news-img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    #calendar {
+      width: 300px;
+      height: 50px;
+      left: calc(50% - 150px);
+      top: 90%;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #core{
+        min-width: 100%;
+        height: 3px;
+        position: absolute;
+    }
+
+    .day{
+        position: absolute;
+        margin-left: 45px;
+        transform: translateX(calc(-45px / 2));
+    }
+
+    .day p{
+        margin-top: 25px;
+        margin-left: -50%;
+        color: transparent;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        user-select: none;
+        transition: .25s ease;
+    
+    }
+
+    .daySelected {
+        margin-top: 10px;
+        transform: translate(calc(-45px / 2), -5px);
+    }
+
+    .daySelected p{
+        color: var(--black);
+    }
+
+    #Lundi{
+        top: unset;
+        position: unset;
+    }
+    
+    #Mardi{
+        top: unset;
+        position: unset;
+
+    }
+    
+    #Mercredi{
+        top: unset;
+        position: unset;
+
+
+    }
+    
+    #Jeudi{
+        top: unset;
+        position: unset;
+
+    }
+    
+    #Vendredi{
+        top: unset;
+        position: unset;
+
+    }
+
+
+  }
+
+
+

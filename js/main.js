@@ -1,5 +1,7 @@
 /* Semaine de la culture 2020 */
 
+includeHTML();
+
 /* Apply color from custom.js to css files */
 document.documentElement.style.setProperty('--first', mainColor);
 document.documentElement.style.setProperty('--second', mainColor2);
@@ -14,6 +16,18 @@ el1 = document.getElementsByClassName("one")[0];
 el2 = document.getElementsByClassName("two")[0];
 el3 = document.getElementsByClassName("three")[0];
 
+
+
+function BurgerMenu(x) {
+    nav = document.getElementsByTagName("nav")[0];
+    x.classList.toggle("change");
+    if(nav.style.width == '100%'){
+        nav.style.width = "0%";
+    }
+    else{
+        nav.style.width = "100%";
+    }
+}
 
 function DaySelect(id){
 
@@ -214,4 +228,3 @@ function currentSlide(n) {
   }
 
 
-includeHTML();

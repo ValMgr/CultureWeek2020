@@ -55,7 +55,6 @@ body{
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     grid-row: 2 / 5;
-    position: absolute;
     z-index: -1;
     
 }

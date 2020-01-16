@@ -18,8 +18,8 @@
 body{
     overflow-x: hidden !important;
     overflow-y: hidden;
-    min-width: 100vw;
-    min-height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
     
 }
 
@@ -55,6 +55,8 @@ body{
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     grid-row: 2 / 5;
+    position: absolute;
+    z-index: -1;
     
 }
 
